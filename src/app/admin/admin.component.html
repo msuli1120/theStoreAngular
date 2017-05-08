@@ -1,0 +1,23 @@
+<h4>Admin</h4>
+
+<div class="form-group">
+  <label>Item Name:</label>
+  <input #newName>
+</div>
+<div class="form-group">
+  <label>Category:</label>
+  <input #newCategory>
+</div>
+<div class="form-group">
+  <label>Item Description:</label>
+  <textarea #newDescription></textarea>
+</div>
+<div class="form-group">
+  <label>Item Price:</label>
+  <input #newPrice>
+</div>
+<button (click)="submit(newCategory.value, newDescription.value, newName.value, newPrice.value); newCategory.value=''; newDescription.value=''; newName.value=''; newPrice.value=''">Submit</button>
+
+<div>
+  <app-items></app-items>
+</div>

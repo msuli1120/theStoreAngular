@@ -1,0 +1,18 @@
+{
+  "items":[{
+      "name": "Dell 15.6\" PC",
+      "category": "laptop",
+      "description": "This is a Dell laptop",
+      "price": 860.99
+    },{
+      "name": "iphone 8",
+      "category": "cellphone",
+      "description": "This phone sucks, that's why I want to sell it",
+      "price": 200
+    },{
+      "name": "Lenovo Monitor",
+      "category": "electronic",
+      "description": "This is an used 24\" monitor",
+      "price": 120.00
+      }]
+}

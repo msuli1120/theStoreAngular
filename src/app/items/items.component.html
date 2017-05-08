@@ -1,0 +1,15 @@
+<h2>Items</h2>
+
+<div class="item" *ngFor="let item of items | async">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 (click)="goToDetail(item)">{{item.name}}</h4>
+    </div>
+    <div class="panel-body" *ngIf="currentRoute==='/admin'">
+      <li>{{item.category}}</li>
+      <li>{{item.description}}</li>
+      <li>{{item.price}}</li>
+      <app-edit [item]="item"></app-edit>
+    </div>
+  </div>
+</div>
